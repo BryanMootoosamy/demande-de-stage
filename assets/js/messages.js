@@ -4,14 +4,14 @@ let addTimeout = (parameter, message, time) => {
         if (parameter == 'incoming') {
             let incomingMessage = document.createElement('p');
             incomingMessage.setAttribute('class', 'incomingMSG');
-            incomingMessage.appendChild(message);
+            incomingMessage.innerHTML = message;
             messageScreen.appendChild(incomingMessage);
         } else if (parameter == 'outgoing') {
             let outgoingMessage = document.createElement('p');
             outgoingMessage.setAttribute('class', 'outgoingMSG');
-            outgoingMessage.appendChild(message);
+            outgoingMessage.innerHTML = message;
             messageScreen.appendChild(outgoingMessage);
         }
     }, time);
 };
-addTimeout('incoming', 'test', 0);
+addTimeout('incoming', 'test', 5000);

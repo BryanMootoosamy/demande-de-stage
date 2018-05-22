@@ -18,12 +18,7 @@
     </div>
     <div class='chatbox'>
         <div class='chatscreen' id='screen'>
-            <div class='messageIncome'>
-
-            </div>
-            <div class='messageOutcome'>
-
-            </div>
+            
         </div>
         <div class='chatinput'>
 
