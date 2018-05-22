@@ -1,0 +1,343 @@
+@import url(reset.css);
+.loader {
+  background: #000;
+  background: radial-gradient(#222, #000);
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99999; }
+
+.loader-inner {
+  bottom: 0;
+  height: 60px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px; }
+
+.loader-line-wrap {
+  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px; }
+
+.loader-line {
+  border: 4px solid transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px; }
+
+.loader-line-wrap:nth-child(1) {
+  animation-delay: -50ms; }
+
+.loader-line-wrap:nth-child(2) {
+  animation-delay: -100ms; }
+
+.loader-line-wrap:nth-child(3) {
+  animation-delay: -150ms; }
+
+.loader-line-wrap:nth-child(4) {
+  animation-delay: -200ms; }
+
+.loader-line-wrap:nth-child(5) {
+  animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+  border-color: #eb4747;
+  height: 90px;
+  width: 90px;
+  top: 7px; }
+
+.loader-line-wrap:nth-child(2) .loader-line {
+  border-color: #ebeb47;
+  height: 76px;
+  width: 76px;
+  top: 14px; }
+
+.loader-line-wrap:nth-child(3) .loader-line {
+  border-color: #47eb47;
+  height: 62px;
+  width: 62px;
+  top: 21px; }
+
+.loader-line-wrap:nth-child(4) .loader-line {
+  border-color: #47ebeb;
+  height: 48px;
+  width: 48px;
+  top: 28px; }
+
+.loader-line-wrap:nth-child(5) .loader-line {
+  border-color: #4747eb;
+  height: 34px;
+  width: 34px;
+  top: 35px; }
+
+@keyframes spin {
+  0%, 15% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 0%, #2dfdaa 100%); }
+  .page .Hal {
+    transform: translate(5vw, 5vh);
+    border: 5px solid #a1abb2;
+    border-radius: 5px;
+    width: 16vw;
+    height: 90vh;
+    background-color: black; }
+    .page .Hal .name {
+      height: 80%;
+      width: 97.9%;
+      border: 3px solid #595959; }
+      .page .Hal .name .showName {
+        margin-left: 20%;
+        margin-top: 10%;
+        font-size: 2em;
+        color: white;
+        display: flex;
+        border: 3px solid white;
+        width: 55%;
+        text-align: center; }
+        .page .Hal .name .showName #hallo {
+          margin-right: 5%;
+          background-color: #55baff;
+          padding-left: 10%;
+          padding-right: 3%; }
+      .page .Hal .name .redeye {
+        margin-top: 120%; }
+@keyframes hal-bg-animation {
+  0% {
+    filter: saturate(0.5); }
+  50% {
+    filter: saturate(1.2); }
+  100% {
+    filter: saturate(0.5); } }
+@-webkit-keyframes hal-bg-animation {
+  0% {
+    -webkit-filter: saturate(0.5); }
+  50% {
+    -webkit-filter: saturate(1.2); }
+  100% {
+    -webkit-filter: saturate(0.5); } }
+        .page .Hal .name .redeye .hal9000 {
+          position: relative;
+          width: 200px;
+          height: 200px;
+          margin: 4rem auto;
+          border-radius: 50%;
+          background: #ced6d8;
+          /* Old browsers */
+          background: -moz-linear-gradient(-30deg, #ced6d8 0%, #222127 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ced6d8), color-stop(100%, #222127));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(-30deg, #ced6d8 0%, #222127 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(-30deg, #ced6d8 0%, #222127 100%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(-30deg, #ced6d8 0%, #222127 100%);
+          /* IE10+ */
+          background: linear-gradient(150deg, #ced6d8 0%, #222127 100%);
+          /* IE6-9 fallback on horizontal gradient */
+          box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.6), inset 0 -1px 1px rgba(0, 0, 0, 0.4), 1px 5px 15px rgba(0, 0, 0, 0.6);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ced6d8', endColorstr='#222127',GradientType=0 ); }
+        .page .Hal .name .redeye .hal9000:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 184px;
+          height: 184px;
+          margin: -92px 0 0 -92px;
+          content: ' ';
+          border-radius: 50%;
+          background: #4f565d;
+          /* Old browsers */
+          background: -moz-linear-gradient(-30deg, #4f565d 0%, #161314 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #4f565d), color-stop(100%, #161314));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(-30deg, #4f565d 0%, #161314 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(-30deg, #4f565d 0%, #161314 100%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(-30deg, #4f565d 0%, #161314 100%);
+          /* IE10+ */
+          background: linear-gradient(150deg, #4f565d 0%, #161314 100%);
+          /* IE6-9 fallback on horizontal gradient */
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15), inset 0 -1px 1px rgba(255, 255, 255, 0.25);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f565d', endColorstr='#161314',GradientType=0 ); }
+        .page .Hal .name .redeye .hal9000:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 168px;
+          height: 168px;
+          margin: -84px 0 0 -84px;
+          content: ' ';
+          transition: all .7s;
+          -webkit-animation: hal-bg-animation 3.4s infinite;
+          animation: hal-bg-animation 3.4s infinite;
+          border-radius: 50%;
+          background: #000;
+          /* Old browsers */
+          background: -moz-radial-gradient(center, ellipse cover, #d80018 0%, #9c0109 20%, #000 60%, #000 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #d80018), color-stop(20%, #9c0109), color-stop(60%, #000), color-stop(100%, #000));
+          /* Chrome,Safari4+ */
+          background: -webkit-radial-gradient(center, ellipse cover, #d80018 0%, #9c0109 20%, #000 60%, #000 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-radial-gradient(center, ellipse cover, #d80018 0%, #9c0109 20%, #000 60%, #000 100%);
+          /* Opera 12+ */
+          background: -ms-radial-gradient(center, ellipse cover, #d80018 0%, #9c0109 20%, #000 60%, #000 100%);
+          /* IE10+ */
+          background: radial-gradient(ellipse at center, #d80018 0%, #9c0109 20%, #000 60%, #000 100%);
+          /* IE6-9 fallback on horizontal gradient */
+          box-shadow: 0 -4px 2px -2px rgba(224, 239, 247, 0.6);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c0109', endColorstr='#000000',GradientType=1 ); }
+@keyframes hal-eye-animation {
+  0% {
+    box-shadow: 1px -2px 15px 5px rgba(253, 210, 71, 0.25), -1px 2px 13px 13px rgba(255, 0, 4, 0.7); }
+  25% {
+    box-shadow: 0 3px 16px 4px rgba(253, 210, 71, 0.3), 1px 1px 15px 15px rgba(255, 0, 4, 0.7); }
+  50% {
+    box-shadow: -2px -1px 16px 6px rgba(253, 210, 71, 0.35), -1px -1px 14px 14px rgba(255, 0, 4, 0.7); }
+  75% {
+    box-shadow: 0 0 15px 5px rgba(253, 210, 71, 0.3), 1px -1px 15px 13px rgba(255, 0, 4, 0.7); }
+  100% {
+    box-shadow: 1px -2px 15px 5px rgba(253, 210, 71, 0.25), -1px 2px 13px 13px rgba(255, 0, 4, 0.7); } }
+@-webkit-keyframes hal-eye-animation {
+  0% {
+    box-shadow: 1px -2px 15px 5px rgba(253, 210, 71, 0.25), -1px 2px 13px 13px rgba(255, 0, 4, 0.7); }
+  25% {
+    box-shadow: 0 3px 16px 4px rgba(253, 210, 71, 0.3), 1px 1px 15px 15px rgba(255, 0, 4, 0.7); }
+  50% {
+    box-shadow: -2px -1px 16px 6px rgba(253, 210, 71, 0.35), -1px -1px 14px 14px rgba(255, 0, 4, 0.7); }
+  75% {
+    box-shadow: 0 0 15px 5px rgba(253, 210, 71, 0.3), 1px -1px 15px 13px rgba(255, 0, 4, 0.7); }
+  100% {
+    box-shadow: 1px -2px 15px 5px rgba(253, 210, 71, 0.25), -1px 2px 13px 13px rgba(255, 0, 4, 0.7); } }
+        .page .Hal .name .redeye .hal9000 .hal-eye {
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          left: 50%;
+          width: 144px;
+          height: 144px;
+          margin: -72px 0 0 -72px;
+          border-radius: 50%;
+          box-shadow: 0 -4px 3px -1px rgba(240, 240, 255, 0.55); }
+        .page .Hal .name .redeye .hal9000 .hal-eye:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 128px;
+          height: 128px;
+          margin: -64px 0 0 -64px;
+          content: ' ';
+          border-radius: 50%;
+          box-shadow: -1px -3px 2px -1px rgba(240, 240, 255, 0.45); }
+        .page .Hal .name .redeye .hal9000 .hal-eye:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 24px;
+          height: 24px;
+          margin: -12px 0 0 -12px;
+          content: ' ';
+          /* IE6-9 fallback on horizontal gradient */
+          -webkit-animation: hal-eye-animation 4.5s infinite;
+          animation: hal-eye-animation 4.5s infinite;
+          border-radius: 50%;
+          background: #fdd247;
+          /* Old browsers */
+          background: -moz-radial-gradient(center, ellipse cover, #fff0fc 0%, #ffe091 20%, #ffe26c 45%, #fdd247 100%);
+          /* FF3.6+ */
+          background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff0fc), color-stop(20%, #ffe091), color-stop(45%, #ffe26c), color-stop(100%, #fdd247));
+          /* Chrome,Safari4+ */
+          background: -webkit-radial-gradient(center, ellipse cover, #fff0fc 0%, #ffe091 20%, #ffe26c 45%, #fdd247 100%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-radial-gradient(center, ellipse cover, #fff0fc 0%, #ffe091 20%, #ffe26c 45%, #fdd247 100%);
+          /* Opera 12+ */
+          background: -ms-radial-gradient(center, ellipse cover, #fff0fc 0%, #ffe091 20%, #ffe26c 45%, #fdd247 100%);
+          /* IE10+ */
+          background: radial-gradient(ellipse at center, #fff0fc 0%, #ffe091 20%, #ffe26c 45%, #fdd247 100%);
+          box-shadow: 1px -2px 15px 5px rgba(253, 210, 71, 0.25), -1px 2px 13px 13px rgba(255, 0, 4, 0.7);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe091', endColorstr='#ffe26c',GradientType=1 ); }
+        .page .Hal .name .redeye .hal9000 .hal-reflect {
+          font-family: 'Open Sans';
+          position: absolute;
+          z-index: 2;
+          top: 50%;
+          left: 50%;
+          overflow: hidden;
+          width: 128px;
+          height: 128px;
+          margin: -64px 0 0 -64px;
+          color: #eefcfd;
+          border-radius: 50%; }
+        .page .Hal .name .redeye .hal9000 .hal-reflect:before,
+        .page .Hal .name .redeye .hal9000 .hal-reflect:after {
+          position: absolute;
+          display: block;
+          width: 300px;
+          content: '\2584\2584\00a0\00a0\00a0\00a0\2580\2580\00a0\00a0\00a0\00a0\2584\2584';
+          text-align: center; }
+        .page .Hal .name .redeye .hal-reflect:before {
+          font-size: 30px;
+          top: -5px;
+          left: -86px;
+          transform: matrix3d(0.45, 0, 0, 0, 0, 0.25, 0, 0.0075, 0, 0, 1, 0, 0, 0, 0, 1);
+          color: rgba(238, 252, 253, 0.45);
+          text-shadow: 3px 3px 6px, 7px 7px 6px, -3px -3px 4px, -7px -7px 4px, 4px -4px 3px, -4px 4px 3px, 3px 34px 6px, 3px 34px 6px; }
+        .page .Hal .name .redeye .hal9000 .hal-reflect:after {
+          font-size: 30px;
+          top: 14px;
+          left: -84px;
+          transform: matrix3d(0.3, 0, 0, 0, 0, 0.15, 0, 0.0075, 0, 0, 1, 0, 0, 0, 0, 1);
+          color: rgba(238, 252, 253, 0.35);
+          text-shadow: 5px 5px 5px, 8px 8px 7px, -5px -5px 5px, -8px -8px 7px, 4px -5px 4px, -5px 4px 5px, 2px 37px 5px, 2px 37px 5px; }
+    .page .Hal .rect {
+      height: 18.7%;
+      width: 97.9%;
+      border: 3px solid #595959; }
+  .page .chatbox {
+    display: block; }
+    .page .chatbox .chatscreen {
+      height: 60vh;
+      width: 60vw;
+      border: 5px solid #a1abb2;
+      background-color: #B2B2A1;
+      transform: translate(20vw, 10vh); }
+    .page .chatbox .chatinput {
+      width: 60vw;
+      height: 5vh;
+      background-color: #a1abb2;
+      transform: translate(20.5vw, 15vh);
+      border-radius: 20px; }
+
+/*# sourceMappingURL=style.css.map */

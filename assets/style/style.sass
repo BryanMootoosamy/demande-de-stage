@@ -1,0 +1,65 @@
+@import 'loader.scss'
+@import 'reset.css'
+$grey: #595959
+$lightgrey: #a1abb2
+$lightblue: #55baff
+$green: #CCCC9C
+$dunno: #B2B2A1
+
+
+.page
+    width: 100vw
+    height: 100vh
+    display: flex
+    background: rgb(34,193,195)
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,170,1) 100%)
+    .Hal
+        transform: translate(5vw, 5vh)
+        border: 5px solid $lightgrey
+        border-radius: 5px
+        width: 16vw
+        height: 90vh
+        background-color: black
+        .name
+            height: 80%
+            width: 97.9%
+            border: 3px solid $grey
+            .showName
+                margin-left: 20%
+                margin-top: 10%
+                font-size: 2em
+                color: white
+                display: flex
+                border: 3px solid white
+                width: 55%
+                text-align: center
+                #hallo 
+                    margin-right: 5%
+                    background-color: $lightblue
+                    padding-left: 10%
+                    padding-right: 3%
+            .redeye
+                margin-top: 120%
+                @import 'redeye.scss'
+                
+        .rect
+            height: 18.7%
+            width: 97.9%
+            border: 3px solid $grey
+    .chatbox
+        display: block
+        .chatscreen
+            height: 60vh
+            width: 60vw
+            border: 5px solid $lightgrey
+            background-color: $dunno
+            transform: translate(20vw, 10vh)
+        .chatinput
+            width: 60vw
+            height: 5vh
+            background-color: $lightgrey
+            transform: translate(20.5vw, 15vh)
+            border-radius: 20px
+            
+
+
