@@ -13,7 +13,7 @@ let addTimeout = (parameter, message, time) => {
             messageScreen.appendChild(outgoingMessage);
         } else if (parameter == 'backend') {
             let backendMessage = document.createElement('p');
-            backendMessage.setAttribute('class', 'backendMSG');
+            backendMessage.setAttribute('class', 'incomingMSG backendMSG');
             backendMessage.innerHTML = message;
             messageScreen.appendChild(backendMessage);
         }
