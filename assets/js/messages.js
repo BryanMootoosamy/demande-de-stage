@@ -11,11 +11,6 @@ let addTimeout = (parameter, message, time) => {
             outgoingMessage.setAttribute('class', 'outgoingMSG');
             outgoingMessage.innerHTML = message;
             messageScreen.appendChild(outgoingMessage);
-        } else if (parameter == 'backend') {
-            let backendMessage = document.createElement('p');
-            backendMessage.setAttribute('class', 'incomingMSG backendMSG');
-            backendMessage.innerHTML = message;
-            messageScreen.appendChild(backendMessage);
         }
     }, time);
 };

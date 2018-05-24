@@ -25,8 +25,8 @@
         <div class='chatscreen' id='screen'>
             <h5>Conversation avec Bryan Mootoosamy</h5>
         </div>
-        <div class='chatinput'>
-
+        <div class='modalafter' id='modal'>
+            <button type='button' id='modalButton'>CONTACT</button>
         </div>
     </div>
 </section>

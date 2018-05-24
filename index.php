@@ -14,4 +14,5 @@
     </body>
     <script src="./assets/js/translationTrigger.js"></script>
     <script src="./assets/js/messages.js"></script>
+    <script src="./assets/js/modal.js"></script>
 </html>

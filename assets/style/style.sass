@@ -14,12 +14,6 @@ $chatFont: 'Tajawal'
 @keyframes fadeout 
     0%
         opacity: 1
-    25%
-        opacity: 0.75
-    50%
-        opacity: 0.5
-    75%
-        opacity: 0.25 
     100%
         opacity: 0
         display: none
@@ -28,11 +22,6 @@ $chatFont: 'Tajawal'
         transform: translate(30vw, 5vh)
     100%
         transform: translate(5vw, 5vh)
-@keyframes activate
-    0%
-        opacity: 0
-    100%
-        opacity: 1
 .page
     overflow: hidden
     width: 100vw
@@ -67,12 +56,12 @@ $chatFont: 'Tajawal'
                     padding-right: 3%
             .redeye
                 margin-top: 120%
-                @import 'redeye.scss'
+                @import 'redeye.scss' 
                 
         .rect
             height: 18.7%
             width: 97.9%
-            border: 3px solid $grey
+            border: 3px solid $grey 
     .intro
         transform: translate(40vw, 20vh)
         font-family: $chatFont
@@ -144,16 +133,29 @@ $chatFont: 'Tajawal'
                 color: white
                 margin-left: 23vw
                 margin-top: 1vh
-        .chatinput
-            width: 60vw
-            height: 5vh
-            background-color: $lightgrey
-            transform: translate(20.5vw, 15vh)
-            border-radius: 20px
+        .modalbefore
+            display: none
+        .modalafter
+            display: block
+            transform: translate(47vw, 15vh)
+            button
+                background: none
+                border: 2px solid white
+                border-radius: 8px
+                padding: 1vh 0.5vw
+                font-family: $chatFont
+                font-weight: 400
+                font-size: 1.3em
+                color: white
+                &:hover
+                    background: white
+                    color: black
+                    border: 2px solid #4B4E4F
+
     .showChatBox
         transform: translateX(-30vw)
         opacity: 0
         display: block
-        animation: activate 1s forwards
+        animation: fade 1s forwards
         animation-delay: 0.5s
 

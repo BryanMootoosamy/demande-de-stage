@@ -8,12 +8,6 @@
 @keyframes fadeout {
   0% {
     opacity: 1; }
-  25% {
-    opacity: 0.75; }
-  50% {
-    opacity: 0.5; }
-  75% {
-    opacity: 0.25; }
   100% {
     opacity: 0;
     display: none; } }
@@ -22,11 +16,6 @@
     transform: translate(30vw, 5vh); }
   100% {
     transform: translate(5vw, 5vh); } }
-@keyframes activate {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 .page {
   overflow: hidden;
   width: 100vw;
@@ -330,17 +319,29 @@
         color: white;
         margin-left: 23vw;
         margin-top: 1vh; }
-    .page .chatbox .chatinput {
-      width: 60vw;
-      height: 5vh;
-      background-color: #a1abb2;
-      transform: translate(20.5vw, 15vh);
-      border-radius: 20px; }
+    .page .chatbox .modalbefore {
+      display: none; }
+    .page .chatbox .modalafter {
+      display: block;
+      transform: translate(47vw, 15vh); }
+      .page .chatbox .modalafter button {
+        background: none;
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 1vh 0.5vw;
+        font-family: "Tajawal";
+        font-weight: 400;
+        font-size: 1.3em;
+        color: white; }
+        .page .chatbox .modalafter button:hover {
+          background: white;
+          color: black;
+          border: 2px solid #4B4E4F; }
   .page .showChatBox {
     transform: translateX(-30vw);
     opacity: 0;
     display: block;
-    animation: activate 1s forwards;
+    animation: fade 1s forwards;
     animation-delay: 0.5s; }
 
 /*# sourceMappingURL=style.css.map */
