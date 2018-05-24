@@ -12,6 +12,6 @@
             require "./controller/controller.php";
         ?>
     </body>
-    <script src="./assets/js/loader.js"></script>
+    <script src="./assets/js/translationTrigger.js"></script>
     <script src="./assets/js/messages.js"></script>
 </html>

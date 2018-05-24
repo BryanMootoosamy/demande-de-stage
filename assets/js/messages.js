@@ -19,14 +19,17 @@ let addTimeout = (parameter, message, time) => {
         }
     }, time);
 };
-addTimeout('incoming', "Bonjour Mr, Je m'appelle Bryan et je suis à la recherche d'un stage pour le mois d'Août !", 5000);
-addTimeout('outgoing',"Bonjour ! Dites m'en plus ?" ,7000);
-addTimeout('incoming',"Dans le cadre de ma formation BeCode Charleroi, je suis à la recherche d'un stage dans le développement web !",9000);
-addTimeout('outgoing','Très bien.',11000);
-addTimeout('outgoing','Quelles sont vos compétences ?',13000);
-addTimeout('incoming','En ce qui concerne le front-end:',14500);
-addTimeout('incoming','HTML5, CSS, SASS, JS, REACT',16000);
-addTimeout('incoming','En ce qui concerne le back-end:',18000);
-addTimeout('incoming','PHP (notamment orienté objet), ReactPHP.',19000);
-addTimeout('outgoing','Autre chose ? Une remarque ?',21000);
-addTimeout('incoming','',21000)
+let startMessage = () => {
+    addTimeout('incoming', "Bonjour Mr, Je m'appelle Bryan et je suis à la recherche d'un stage pour le mois d'Août !", 2000);
+    addTimeout('outgoing',"Bonjour ! Dites m'en plus ?" ,4000);
+    addTimeout('incoming',"Dans le cadre de ma formation BeCode Charleroi, je suis à la recherche d'un stage dans le développement web !",6000);
+    addTimeout('outgoing','Très bien.',7000);
+    addTimeout('outgoing','Quelles sont vos compétences ?',9000);
+    addTimeout('incoming','En ce qui concerne le front-end:',11000);
+    addTimeout('incoming','HTML5, CSS, SASS, JS, REACT',13000);
+    addTimeout('incoming','En ce qui concerne le back-end:',15000);
+    addTimeout('incoming','PHP (notamment orienté objet), ReactPHP.',17000);
+    addTimeout('outgoing','Autre chose ? Une remarque ?',19000);
+    addTimeout('incoming',"Je dois ajouter que même si je suis fullstack avec une préférence pour le backend, n'étant pas designer, je peux suivre une maquette mais je ne peux moi-même créer un design.",21000);
+
+}

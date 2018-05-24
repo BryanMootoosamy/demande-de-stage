@@ -1,27 +1,52 @@
-@import 'loader.scss'
 @import 'reset.css'
-@import url('https://fonts.googleapis.com/css?family=Tajawal')
+@import url('https://fonts.googleapis.com/css?family=Tajawal:200,300,400')
 $grey: #595959
 $lightgrey: #a1abb2
 $lightblue: #55baff
 $green: #CCCC9C
 $dunno: #B2B2A1
 $chatFont: 'Tajawal'
-
-
+@keyframes fade 
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+@keyframes fadeout 
+    0%
+        opacity: 1
+    25%
+        opacity: 0.75
+    50%
+        opacity: 0.5
+    75%
+        opacity: 0.25 
+    100%
+        opacity: 0
+        display: none
+@keyframes translate 
+    0%
+        transform: translate(30vw, 5vh)
+    100%
+        transform: translate(5vw, 5vh)
+@keyframes activate
+    0%
+        opacity: 0
+    100%
+        opacity: 1
 .page
+    overflow: hidden
     width: 100vw
     height: 100vh
     display: flex
     background: rgb(34,193,195)
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,253,170,1) 100%)
     .Hal
-        transform: translate(5vw, 5vh)
+        transform: translate(30vw, 5vh)
         border: 5px solid $lightgrey
         border-radius: 5px
         width: 16vw
         height: 90vh
-        background-color: black
+        background-color: #2E3030
         .name
             height: 80%
             width: 97.9%
@@ -48,8 +73,39 @@ $chatFont: 'Tajawal'
             height: 18.7%
             width: 97.9%
             border: 3px solid $grey
+    .intro
+        transform: translate(40vw, 20vh)
+        font-family: $chatFont
+        color: white
+        font-size: 3em
+        font-weight: 350
+        width: 20vw
+        border: 1px solid white
+        opacity: 0
+        animation: fade 1s forwards
+        height: 30vh
+        padding: 2vh 2vw
+        border-radius: 8px
+        h5 
+            opacity: 0
+            animation-delay: 0.5s
+            animation: fade 1.5s forwards
+        #p1 
+            opacity: 0
+            animation: fade 1.5s forwards
+            animation-delay: 1.5s
+            margin-top: 2vh
+        #p2 
+            opacity: 0
+            animation: fade 1.5s forwards
+            animation-delay: 3s
+            margin-top: 2vh
+    .fadeout
+        animation: fadeout 1s forwards
+    .translate 
+        animation: translate 2s forwards
     .chatbox
-        display: block
+        display: none
         .chatscreen
             height: 60vh
             display: block
@@ -58,6 +114,7 @@ $chatFont: 'Tajawal'
             background: rgb(2,0,36)
             background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,200,177,1) 0%, rgba(68,186,210,1) 99%)
             transform: translate(20vw, 10vh)
+            overflow-y: scroll
             .incomingMSG
                 background: rgba(40, 99, 255, 0.7)
                 
@@ -70,7 +127,7 @@ $chatFont: 'Tajawal'
                 font-family: $chatFont
                 max-width: 15vw
             .outgoingMSG
-                background: $lightgrey
+                background: #4B4E4F
                 margin-left: 40vw
                 border-radius: 15px
                 padding: 0.5vh 2vw
@@ -80,6 +137,7 @@ $chatFont: 'Tajawal'
                 color: white
                 font-family: $chatFont
                 max-width: 15vw
+                text-align: right
             h5 
                 font-family: $chatFont
                 font-size: 1.3em
@@ -92,6 +150,10 @@ $chatFont: 'Tajawal'
             background-color: $lightgrey
             transform: translate(20.5vw, 15vh)
             border-radius: 20px
-            
-
+    .showChatBox
+        transform: translateX(-30vw)
+        opacity: 0
+        display: block
+        animation: activate 1s forwards
+        animation-delay: 0.5s
 
