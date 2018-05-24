@@ -27,4 +27,4 @@ let startMessage = () => {
     addTimeout('outgoing','Autre chose ? Une remarque ?',19000);
     addTimeout('incoming',"Je dois ajouter que même si je suis fullstack avec une préférence pour le backend, n'étant pas designer, je peux suivre une maquette mais je ne peux moi-même créer un design.",21000);
 
-}
+};

@@ -6,6 +6,5 @@ button.addEventListener('click', function(){
     intro.classList.add('fadeout');
     hal.classList.add('translate');
     chatbox.classList.add('showChatBox');
-    trigger = true;
     startMessage();
 });
