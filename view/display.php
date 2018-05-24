@@ -29,7 +29,7 @@
             <form  method="post">
                 <h5>Formulaire de contact</h5>
                 <label for="mail"><input type="email" name="recrutermail" id="recruteurmail" placeholder="Adresse Mail"></label>
-                <label for="msgToSend"><textarea name="recruteurmessage" id="" cols="35" rows="5" placeholder="Message"></textarea></label>
+                <label for="msgToSend"><textarea name="recruteurmessage" id="recruteurmessage" cols="35" rows="5" placeholder="Message"></textarea></label>
                 <button type="button" id="sendMail">Envoyer</button>
             </form>
         </div>
