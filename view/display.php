@@ -25,7 +25,15 @@
         <div class='chatscreen' id='screen'>
             <h5>Conversation avec Bryan Mootoosamy</h5>
         </div>
-        <div class='modalafter' id='modal'>
+        <div class='modalbefore' id='modalbox'>
+            <form  method="post">
+                <h5>Formulaire de contact</h5>
+                <label for="mail"><input type="email" name="recrutermail" id="recruteurmail" placeholder="Adresse Mail"></label>
+                <label for="msgToSend"><textarea name="recruteurmessage" id="" cols="35" rows="5" placeholder="Message"></textarea></label>
+                <button type="button" id="sendMail">Envoyer</button>
+            </form>
+        </div>
+        <div class='buttonafter' id='button'>
             <button type='button' id='modalButton'>CONTACT</button>
         </div>
     </div>

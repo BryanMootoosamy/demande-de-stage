@@ -319,12 +319,48 @@
         color: white;
         margin-left: 23vw;
         margin-top: 1vh; }
+    .page .chatbox .buttonbefore {
+      display: none; }
+    .page .chatbox .buttonafter {
+      display: block;
+      transform: translate(47vw, 15vh); }
+      .page .chatbox .buttonafter button {
+        background: none;
+        border: 2px solid white;
+        border-radius: 8px;
+        padding: 1vh 0.5vw;
+        font-family: "Tajawal";
+        font-weight: 400;
+        font-size: 1.3em;
+        color: white; }
+        .page .chatbox .buttonafter button:hover {
+          background: white;
+          color: black;
+          border: 2px solid #4B4E4F; }
     .page .chatbox .modalbefore {
       display: none; }
     .page .chatbox .modalafter {
       display: block;
-      transform: translate(47vw, 15vh); }
+      position: absolute;
+      height: 38vh;
+      width: 20vw;
+      border: 2px solid white;
+      transform: translate(40vw, -30vh);
+      background: #020024;
+      background: linear-gradient(180deg, #020024 0%, #5dc8b1 0%, #44bad2 99%);
+      text-align: center; }
+      .page .chatbox .modalafter h5 {
+        font-family: "Tajawal";
+        margin-top: 3vh;
+        font-size: 1.8em;
+        color: white;
+        font-weight: 350;
+        margin-bottom: 5vh; }
+      .page .chatbox .modalafter input {
+        width: 10vw;
+        margin-bottom: 5vh; }
       .page .chatbox .modalafter button {
+        margin-top: 3vh;
         background: none;
         border: 2px solid white;
         border-radius: 8px;

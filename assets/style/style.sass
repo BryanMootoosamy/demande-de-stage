@@ -133,12 +133,48 @@ $chatFont: 'Tajawal'
                 color: white
                 margin-left: 23vw
                 margin-top: 1vh
+        .buttonbefore
+            display: none
+        .buttonafter
+            display: block
+            transform: translate(47vw, 15vh)
+            button
+                background: none
+                border: 2px solid white
+                border-radius: 8px
+                padding: 1vh 0.5vw
+                font-family: $chatFont
+                font-weight: 400
+                font-size: 1.3em
+                color: white
+                &:hover
+                    background: white
+                    color: black
+                    border: 2px solid #4B4E4F
         .modalbefore
             display: none
         .modalafter
             display: block
-            transform: translate(47vw, 15vh)
+            position: absolute
+            height: 38vh
+            width: 20vw
+            border: 2px solid white
+            transform: translate(40vw, -30vh)
+            background: rgb(2,0,36)
+            background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,200,177,1) 0%, rgba(68,186,210,1) 99%)
+            text-align: center
+            h5 
+                font-family: $chatFont
+                margin-top: 3vh
+                font-size: 1.8em
+                color: white
+                font-weight: 350
+                margin-bottom: 5vh
+            input
+                width: 10vw
+                margin-bottom: 5vh
             button
+                margin-top: 3vh
                 background: none
                 border: 2px solid white
                 border-radius: 8px
