@@ -6,11 +6,13 @@ let addTimeout = (parameter, message, time) => {
             incomingMessage.setAttribute('class', 'incomingMSG');
             incomingMessage.innerHTML = message;
             messageScreen.appendChild(incomingMessage);
+            messageScreen.scrollTop = messageScreen.scrollHeight;
         } else if (parameter == 'outgoing') {
             let outgoingMessage = document.createElement('p');
             outgoingMessage.setAttribute('class', 'outgoingMSG');
             outgoingMessage.innerHTML = message;
             messageScreen.appendChild(outgoingMessage);
+            messageScreen.scrollTop = messageScreen.scrollHeight;
         }
     }, time);
 };
@@ -26,5 +28,9 @@ let startMessage = () => {
     addTimeout('incoming','PHP (notamment orienté objet), ReactPHP.',17000);
     addTimeout('outgoing','Autre chose ? Une remarque ?',19000);
     addTimeout('incoming',"Je dois ajouter que même si je suis fullstack avec une préférence pour le backend, n'étant pas designer, je peux suivre une maquette mais je ne peux moi-même créer un design.",21000);
-
+    addTimeout('outgoing', 'Et que recherchez-vous dans notre entreprise ?', 22500);
+    addTimeout('incoming', "Je recherche un environnement de travail qui me permette d'approfondir mes connaissances essentiellement en PHP, ReactPHP, Javascript mais aussi d'en développer de nouvelles dans des languages tels que kotlin, node.js, python et java.", 24000);
+    addTimeout('outgoing', 'Et que pensez-vous pouvoir nous apporter ?', 25000);
+    addTimeout('incoming', "un esprit passionné et assidu, toujours à la recherche de nouvelles technologies à employer. Aussi, étant autodidacte, je me dois toujours de combler mes lacunes dès qu'il y en a afin de toujours rester le plus productif possible.", 27000);
+    addTimeout('outgoing', "", 29000);
 };
