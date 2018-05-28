@@ -10,5 +10,5 @@ button.addEventListener('click', function(){
     startMessage();
     setTimeout(function(){
         contactButton.classList.add('buttonafter');
-    }, 31500);
+    }, 40000);
 });

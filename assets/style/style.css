@@ -23,19 +23,23 @@
   display: flex;
   background: #22c1c3;
   background: linear-gradient(0deg, #22c1c3 0%, #2dfdaa 100%); }
+  @media screen and (max-width: 1200px) {
+    .page {
+      display: flex; } }
   .page .Hal {
+    display: block;
     transform: translate(30vw, 5vh);
     border: 5px solid #a1abb2;
     border-radius: 5px;
     width: 16vw;
     height: 90vh;
     background-color: #2E3030; }
-    @media screen and (max-width: 768px) and (orientation: portrait) {
+    @media screen and (max-width: 1200px) and (orientation: portrait) {
       .page .Hal {
         height: 50vh;
         width: 16vh;
         transform: rotate(-90deg) translate(20vw, 19vh); } }
-    @media screen and (max-width: 768px) and (orientation: landscape) {
+    @media screen and (max-width: 1200px) and (orientation: landscape) {
       .page .Hal {
         height: 85vh;
         width: 16vw;
@@ -44,11 +48,11 @@
       height: 80%;
       width: 97.9%;
       border: 3px solid #595959; }
-      @media screen and (max-width: 768px) and (orientation: portrait) {
+      @media screen and (max-width: 1200px) and (orientation: portrait) {
         .page .Hal .name {
           height: 78%;
           width: 95%; } }
-      @media screen and (max-width: 768px) and (orientation: landscape) {
+      @media screen and (max-width: 1200px) and (orientation: landscape) {
         .page .Hal .name {
           height: 77.5%;
           width: 95%; } }
@@ -61,12 +65,12 @@
         border: 3px solid white;
         width: 55%;
         text-align: center; }
-        @media screen and (max-width: 768px) and (orientation: portrait) {
+        @media screen and (max-width: 1200px) and (orientation: portrait) {
           .page .Hal .name .showName {
             font-size: 1em;
             width: 90%;
             margin-left: 1.5%; } }
-        @media screen and (max-width: 768px) and (orientation: landscape) {
+        @media screen and (max-width: 1200px) and (orientation: landscape) {
           .page .Hal .name .showName {
             font-size: 1.1em;
             width: 90%;
@@ -273,25 +277,26 @@
           transform: matrix3d(0.3, 0, 0, 0, 0, 0.15, 0, 0.0075, 0, 0, 1, 0, 0, 0, 0, 1);
           color: rgba(238, 252, 253, 0.35);
           text-shadow: 5px 5px 5px, 8px 8px 7px, -5px -5px 5px, -8px -8px 7px, 4px -5px 4px, -5px 4px 5px, 2px 37px 5px, 2px 37px 5px; }
-        @media screen and (max-width: 768px) and (orientation: portrait) {
+        @media screen and (max-width: 1200px) and (orientation: portrait) {
           .page .Hal .name .redeye {
             transform: scale(0.4) translate(-50%, -60%); } }
-        @media screen and (max-width: 768px) and (orientation: landscape) {
+        @media screen and (max-width: 1200px) and (orientation: landscape) {
           .page .Hal .name .redeye {
             transform: scale(0.4) translate(-50%, -73%); } }
     .page .Hal .rect {
       height: 18.7%;
       width: 97.9%;
       border: 3px solid #595959; }
-      @media screen and (max-width: 768px) and (orientation: portrait) {
+      @media screen and (max-width: 1200px) and (orientation: portrait) {
         .page .Hal .rect {
           height: 18%;
           width: 95%; } }
-      @media screen and (max-width: 768px) and (orientation: landscape) {
+      @media screen and (max-width: 1200px) and (orientation: landscape) {
         .page .Hal .rect {
           height: 19%;
           width: 94.5%; } }
   .page .intro {
+    display: block;
     transform: translate(40vw, 20vh);
     font-family: "Tajawal";
     color: white;
@@ -304,13 +309,13 @@
     height: 30vh;
     padding: 2vh 2vw;
     border-radius: 8px; }
-    @media screen and (max-width: 768px) and (orientation: portrait) {
+    @media screen and (max-width: 1200px) and (orientation: portrait) {
       .page .intro {
         font-size: 2em;
         transform: translate(-15vw, 30vh);
         width: 84%;
         height: 40%; } }
-    @media screen and (max-width: 768px) and (orientation: landscape) {
+    @media screen and (max-width: 1200px) and (orientation: landscape) {
       .page .intro {
         font-size: 1.8em;
         width: 40%;
@@ -334,7 +339,7 @@
     animation: fadeout 1s forwards; }
   .page .translate {
     animation: translate 2s forwards; }
-    @media screen and (max-width: 768px) and (orientation: portrait) {
+    @media screen and (max-width: 1200px) and (orientation: portrait) {
       .page .translate {
         animation: none; } }
   .page .chatbox {
@@ -348,12 +353,13 @@
       background: linear-gradient(180deg, #020024 0%, #5dc8b1 0%, #44bad2 99%);
       transform: translate(20vw, 10vh);
       overflow-y: scroll; }
-      @media screen and (max-width: 768px) and (orientation: portrait) {
+      @media screen and (max-width: 1200px) and (orientation: portrait) {
         .page .chatbox .chatscreen {
-          width: 90vw;
+          width: 84vw;
           height: 50vh;
           margin-left: auto;
-          margin-right: auto; } }
+          margin-right: auto;
+          transform: translate(33%, 20%); } }
       .page .chatbox .chatscreen .incomingMSG {
         background: rgba(40, 99, 255, 0.7);
         border-radius: 15px;
@@ -364,10 +370,10 @@
         color: white;
         font-family: "Tajawal";
         max-width: 15vw; }
-        @media screen and (max-width: 768px) and (orientation: portrait) {
+        @media screen and (max-width: 1200px) and (orientation: portrait) {
           .page .chatbox .chatscreen .incomingMSG {
             max-width: 80%; } }
-        @media screen and (max-width: 768px) and (orientation: landscape) {
+        @media screen and (max-width: 1200px) and (orientation: landscape) {
           .page .chatbox .chatscreen .incomingMSG {
             max-width: 70%; } }
       .page .chatbox .chatscreen .outgoingMSG {
@@ -382,12 +388,12 @@
         font-family: "Tajawal";
         max-width: 15vw;
         text-align: right; }
-        @media screen and (max-width: 768px) and (orientation: portrait) {
+        @media screen and (max-width: 1200px) and (orientation: portrait) {
           .page .chatbox .chatscreen .outgoingMSG {
             max-width: 80%;
             margin-right: 5%;
             margin-left: 20%; } }
-        @media screen and (max-width: 768px) and (orientation: landscape) {
+        @media screen and (max-width: 1200px) and (orientation: landscape) {
           .page .chatbox .chatscreen .outgoingMSG {
             max-width: 70%;
             transform: translateX(15%);
@@ -398,11 +404,11 @@
         color: white;
         margin-left: 23vw;
         margin-top: 1vh; }
-        @media screen and (max-width: 768px) and (orientation: portrait) {
+        @media screen and (max-width: 1200px) and (orientation: portrait) {
           .page .chatbox .chatscreen h5 {
             margin-left: 3%;
             font-size: 1.2em; } }
-        @media screen and (max-width: 768px) and (orientation: landscape) {
+        @media screen and (max-width: 1200px) and (orientation: landscape) {
           .page .chatbox .chatscreen h5 {
             font-size: 1.4em;
             margin-left: 4%; } }
@@ -413,10 +419,10 @@
       transform: translate(47vw, 15vh);
       opacity: 0;
       animation: fade 1.5s forwards; }
-      @media screen and (max-width: 768px) and (orientation: portrait) {
+      @media screen and (max-width: 1200px) and (orientation: portrait) {
         .page .chatbox .buttonafter {
           transform: translate(54vw, 15vh); } }
-      @media screen and (max-width: 768px) and (orientation: landscape) {
+      @media screen and (max-width: 1200px) and (orientation: landscape) {
         .page .chatbox .buttonafter {
           transform: translate(44vw, 15vh); } }
       .page .chatbox .buttonafter button {
@@ -446,12 +452,12 @@
       text-align: center;
       opacity: 0;
       animation: fade 1s forwards; }
-      @media screen and (max-width: 768px) and (orientation: portrait) {
+      @media screen and (max-width: 1200px) and (orientation: portrait) {
         .page .chatbox .modalafter {
           width: 85%;
           height: 47%;
           transform: translate(32%, -80%); } }
-      @media screen and (max-width: 768px) and (orientation: landscape) {
+      @media screen and (max-width: 1200px) and (orientation: landscape) {
         .page .chatbox .modalafter {
           height: 70%;
           width: 75%;
@@ -466,16 +472,16 @@
       .page .chatbox .modalafter input {
         width: 10vw;
         margin-bottom: 5vh; }
-        @media screen and (max-width: 768px) and (orientation: portrait) {
+        @media screen and (max-width: 1200px) and (orientation: portrait) {
           .page .chatbox .modalafter input {
             width: 80%; } }
-        @media screen and (max-width: 768px) and (orientation: landscape) {
+        @media screen and (max-width: 1200px) and (orientation: landscape) {
           .page .chatbox .modalafter input {
             width: 70%; } }
-      @media screen and (max-width: 768px) and (orientation: portrait) {
+      @media screen and (max-width: 1200px) and (orientation: portrait) {
         .page .chatbox .modalafter textarea {
           width: 80%; } }
-      @media screen and (max-width: 768px) and (orientation: landscape) {
+      @media screen and (max-width: 1200px) and (orientation: landscape) {
         .page .chatbox .modalafter textarea {
           width: 70%; } }
       .page .chatbox .modalafter button {
@@ -488,7 +494,7 @@
         font-weight: 400;
         font-size: 1.3em;
         color: white; }
-        @media screen and (max-width: 768px) and (orientation: portrait) {
+        @media screen and (max-width: 1200px) and (orientation: portrait) {
           .page .chatbox .modalafter button {
             padding: 1vh 1vw; } }
         .page .chatbox .modalafter button:hover {
@@ -501,7 +507,7 @@
     display: block;
     animation: fade 1s forwards;
     animation-delay: 0.5s; }
-    @media screen and (max-width: 768px) and (orientation: portrait) {
+    @media screen and (max-width: 1200px) and (orientation: portrait) {
       .page .showChatBox {
         transform: translate(-97.5vw, 20vh); } }
 
