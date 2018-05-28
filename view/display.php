@@ -33,7 +33,7 @@
                 <button type="button" id="sendMail">Envoyer</button>
             </form>
         </div>
-        <div class='buttonafter' id='button'>
+        <div class='buttonbefore' id='button'>
             <button type='button' id='modalButton'>CONTACT</button>
         </div>
     </div>

@@ -30,10 +30,19 @@
     width: 16vw;
     height: 90vh;
     background-color: #2E3030; }
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+      .page .Hal {
+        height: 50vh;
+        width: 16vh;
+        transform: rotate(-90deg) translate(20vw, 19vh); } }
     .page .Hal .name {
       height: 80%;
       width: 97.9%;
       border: 3px solid #595959; }
+      @media screen and (max-width: 768px) and (orientation: portrait) {
+        .page .Hal .name {
+          height: 78%;
+          width: 95%; } }
       .page .Hal .name .showName {
         margin-left: 20%;
         margin-top: 10%;
@@ -43,6 +52,11 @@
         border: 3px solid white;
         width: 55%;
         text-align: center; }
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+          .page .Hal .name .showName {
+            font-size: 1em;
+            width: 90%;
+            margin-left: 1.5%; } }
         .page .Hal .name .showName #hallo {
           margin-right: 5%;
           background-color: #55baff;
@@ -245,10 +259,17 @@
           transform: matrix3d(0.3, 0, 0, 0, 0, 0.15, 0, 0.0075, 0, 0, 1, 0, 0, 0, 0, 1);
           color: rgba(238, 252, 253, 0.35);
           text-shadow: 5px 5px 5px, 8px 8px 7px, -5px -5px 5px, -8px -8px 7px, 4px -5px 4px, -5px 4px 5px, 2px 37px 5px, 2px 37px 5px; }
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+          .page .Hal .name .redeye {
+            transform: scale(0.4) translate(-50%, -60%); } }
     .page .Hal .rect {
       height: 18.7%;
       width: 97.9%;
       border: 3px solid #595959; }
+      @media screen and (max-width: 768px) and (orientation: portrait) {
+        .page .Hal .rect {
+          height: 18%;
+          width: 95%; } }
   .page .intro {
     transform: translate(40vw, 20vh);
     font-family: "Tajawal";
@@ -262,6 +283,12 @@
     height: 30vh;
     padding: 2vh 2vw;
     border-radius: 8px; }
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+      .page .intro {
+        font-size: 2em;
+        transform: translate(-15vw, 30vh);
+        width: 84%;
+        height: 40%; } }
     .page .intro h5 {
       opacity: 0;
       animation-delay: 0.5s;
@@ -280,6 +307,9 @@
     animation: fadeout 1s forwards; }
   .page .translate {
     animation: translate 2s forwards; }
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+      .page .translate {
+        animation: none; } }
   .page .chatbox {
     display: none; }
     .page .chatbox .chatscreen {
@@ -291,6 +321,10 @@
       background: linear-gradient(180deg, #020024 0%, #5dc8b1 0%, #44bad2 99%);
       transform: translate(20vw, 10vh);
       overflow-y: scroll; }
+      @media screen and (max-width: 768px) and (orientation: portrait) {
+        .page .chatbox .chatscreen {
+          width: 90vw;
+          height: 50vh; } }
       .page .chatbox .chatscreen .incomingMSG {
         background: rgba(40, 99, 255, 0.7);
         border-radius: 15px;
@@ -301,6 +335,9 @@
         color: white;
         font-family: "Tajawal";
         max-width: 15vw; }
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+          .page .chatbox .chatscreen .incomingMSG {
+            max-width: 80%; } }
       .page .chatbox .chatscreen .outgoingMSG {
         background: #4B4E4F;
         margin-left: 40vw;
@@ -313,6 +350,11 @@
         font-family: "Tajawal";
         max-width: 15vw;
         text-align: right; }
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+          .page .chatbox .chatscreen .outgoingMSG {
+            max-width: 80%;
+            margin-right: 5%;
+            margin-left: 20%; } }
       .page .chatbox .chatscreen h5 {
         font-family: "Tajawal";
         font-size: 1.3em;
@@ -323,7 +365,9 @@
       display: none; }
     .page .chatbox .buttonafter {
       display: block;
-      transform: translate(47vw, 15vh); }
+      transform: translate(47vw, 15vh);
+      opacity: 0;
+      animation: fade 1.5s forwards; }
       .page .chatbox .buttonafter button {
         background: none;
         border: 2px solid white;
@@ -338,6 +382,8 @@
           color: black;
           border: 2px solid #4B4E4F; }
     .page .chatbox .modalbefore {
+      opacity: 100;
+      animation: fadeout 1s forwards;
       display: none; }
     .page .chatbox .modalafter {
       display: block;
@@ -348,7 +394,9 @@
       transform: translate(40vw, -30vh);
       background: #020024;
       background: linear-gradient(180deg, #020024 0%, #5dc8b1 0%, #44bad2 99%);
-      text-align: center; }
+      text-align: center;
+      opacity: 0;
+      animation: fade 1s forwards; }
       .page .chatbox .modalafter h5 {
         font-family: "Tajawal";
         margin-top: 3vh;
@@ -379,5 +427,8 @@
     display: block;
     animation: fade 1s forwards;
     animation-delay: 0.5s; }
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+      .page .showChatBox {
+        transform: translate(-97.5vw, 20vh); } }
 
 /*# sourceMappingURL=style.css.map */

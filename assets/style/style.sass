@@ -36,10 +36,17 @@ $chatFont: 'Tajawal'
         width: 16vw
         height: 90vh
         background-color: #2E3030
+        @media screen and (max-width: 768px) and (orientation: portrait) 
+            height: 50vh
+            width: 16vh
+            transform: rotate(-90deg) translate(20vw, 19vh)
         .name
             height: 80%
             width: 97.9%
             border: 3px solid $grey
+            @media screen and (max-width: 768px) and (orientation: portrait) 
+                height: 78%
+                width: 95%
             .showName
                 margin-left: 20%
                 margin-top: 10%
@@ -49,6 +56,10 @@ $chatFont: 'Tajawal'
                 border: 3px solid white
                 width: 55%
                 text-align: center
+                @media screen and (max-width: 768px) and (orientation: portrait) 
+                    font-size: 1em
+                    width: 90%
+                    margin-left: 1.5%
                 #hallo 
                     margin-right: 5%
                     background-color: $lightblue
@@ -57,11 +68,16 @@ $chatFont: 'Tajawal'
             .redeye
                 margin-top: 120%
                 @import 'redeye.scss' 
+                @media screen and (max-width: 768px) and (orientation: portrait) 
+                    transform: scale(0.4) translate(-50%, -60%)
                 
         .rect
             height: 18.7%
             width: 97.9%
             border: 3px solid $grey 
+            @media screen and (max-width: 768px) and (orientation: portrait) 
+                height: 18%
+                width: 95%
     .intro
         transform: translate(40vw, 20vh)
         font-family: $chatFont
@@ -75,6 +91,11 @@ $chatFont: 'Tajawal'
         height: 30vh
         padding: 2vh 2vw
         border-radius: 8px
+        @media screen and (max-width: 768px) and (orientation: portrait) 
+            font-size: 2em
+            transform: translate(-15vw, 30vh)
+            width: 84%
+            height: 40%
         h5 
             opacity: 0
             animation-delay: 0.5s
@@ -93,6 +114,8 @@ $chatFont: 'Tajawal'
         animation: fadeout 1s forwards
     .translate 
         animation: translate 2s forwards
+        @media screen and (max-width: 768px) and (orientation: portrait) 
+            animation: none
     .chatbox
         display: none
         .chatscreen
@@ -104,6 +127,9 @@ $chatFont: 'Tajawal'
             background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,200,177,1) 0%, rgba(68,186,210,1) 99%)
             transform: translate(20vw, 10vh)
             overflow-y: scroll
+            @media screen and (max-width: 768px) and (orientation: portrait) 
+                width: 90vw
+                height: 50vh
             .incomingMSG
                 background: rgba(40, 99, 255, 0.7)
                 
@@ -115,6 +141,8 @@ $chatFont: 'Tajawal'
                 color: white
                 font-family: $chatFont
                 max-width: 15vw
+                @media screen and (max-width: 768px) and (orientation: portrait) 
+                    max-width: 80%
             .outgoingMSG
                 background: #4B4E4F
                 margin-left: 40vw
@@ -127,6 +155,10 @@ $chatFont: 'Tajawal'
                 font-family: $chatFont
                 max-width: 15vw
                 text-align: right
+                @media screen and (max-width: 768px) and (orientation: portrait) 
+                    max-width: 80%
+                    margin-right: 5%
+                    margin-left: 20%
             h5 
                 font-family: $chatFont
                 font-size: 1.3em
@@ -138,6 +170,8 @@ $chatFont: 'Tajawal'
         .buttonafter
             display: block
             transform: translate(47vw, 15vh)
+            opacity: 0
+            animation: fade 1.5s forwards
             button
                 background: none
                 border: 2px solid white
@@ -152,6 +186,8 @@ $chatFont: 'Tajawal'
                     color: black
                     border: 2px solid #4B4E4F
         .modalbefore
+            opacity: 100
+            animation: fadeout 1s forwards
             display: none
         .modalafter
             display: block
@@ -163,6 +199,8 @@ $chatFont: 'Tajawal'
             background: rgb(2,0,36)
             background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(93,200,177,1) 0%, rgba(68,186,210,1) 99%)
             text-align: center
+            opacity: 0
+            animation: fade 1s forwards
             h5 
                 font-family: $chatFont
                 margin-top: 3vh
@@ -194,4 +232,6 @@ $chatFont: 'Tajawal'
         display: block
         animation: fade 1s forwards
         animation-delay: 0.5s
+        @media screen and (max-width: 768px) and (orientation: portrait) 
+            transform: translate(-97.5vw, 20vh)
 

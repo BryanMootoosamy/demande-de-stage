@@ -32,5 +32,6 @@ let startMessage = () => {
     addTimeout('incoming', "Je recherche un environnement de travail qui me permette d'approfondir mes connaissances essentiellement en PHP, ReactPHP, Javascript mais aussi d'en développer de nouvelles dans des languages tels que kotlin, node.js, python et java.", 24000);
     addTimeout('outgoing', 'Et que pensez-vous pouvoir nous apporter ?', 25000);
     addTimeout('incoming', "un esprit passionné et assidu, toujours à la recherche de nouvelles technologies à employer. Aussi, étant autodidacte, je me dois toujours de combler mes lacunes dès qu'il y en a afin de toujours rester le plus productif possible.", 27000);
-    addTimeout('outgoing', "", 29000);
+    addTimeout('outgoing', "Entendu ! comment puis-je vous contacter ?", 29000);
+    addTimeout('incoming', "Soit en répondant au Mail, soit en utilisant le bouton contact ci-dessous ou enfin en me contactant sur mon GSM au 0494682531.", 31500);
 };
