@@ -37,7 +37,7 @@ let startMessage = () => {
     setTimeout(function(){
         let link = document.createElement('p');
         link.setAttribute('class', 'incomingMSG');
-        link.innerHTML = "Vous pouvez également visiter mon <a href='mootoosamybryan.be'>site contenant mon portfolio</a> ainsi que mon <a href='https://github.com/BryanMootoosamy?tab=repositories'>github</a> !";
+        link.innerHTML = "Vous pouvez également visiter mon <a href='https://mootoosamybryan.be'>site contenant mon portfolio</a> ainsi que mon <a href='https://github.com/BryanMootoosamy?tab=repositories'>github</a> !";
         messageScreen.appendChild(link);
         messageScreen.scrollTop = messageScreen.scrollHeight;
     }, 47000);
