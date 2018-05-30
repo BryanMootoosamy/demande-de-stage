@@ -27,11 +27,11 @@ let startMessage = () => {
     addTimeout('incoming','En ce qui concerne le back-end:',15000);
     addTimeout('incoming','PHP (notamment orienté objet), ReactPHP.',17000);
     addTimeout('outgoing','Autre chose ? Une remarque ?',19000);
-    addTimeout('incoming',"Je dois ajouter que même si je suis fullstack avec une préférence pour le backend, n'étant pas designer, je peux suivre une maquette mais je ne peux moi-même créer un design.",22000);
-    addTimeout('outgoing', 'Et que recherchez-vous dans notre entreprise ?', 24000);
-    addTimeout('incoming', "Je recherche un environnement de travail qui me permette d'approfondir mes connaissances essentiellement en PHP, ReactPHP, Javascript mais aussi d'en développer de nouvelles dans des languages tels que kotlin, node.js, python et java.", 28000);
-    addTimeout('outgoing', 'Et que pensez-vous pouvoir nous apporter ?', 30000);
-    addTimeout('incoming', "un esprit passionné et assidu, toujours à la recherche de nouvelles technologies à employer. Aussi, étant autodidacte, je me dois toujours de combler mes lacunes dès qu'il y en a afin de toujours rester le plus productif possible.", 33000);
-    addTimeout('outgoing', "Entendu ! comment puis-je vous contacter ?", 37000);
-    addTimeout('incoming', "Soit en répondant au Mail, soit en utilisant le bouton contact ci-dessous ou enfin en me contactant sur mon GSM au 0494682531.", 40000);
+    addTimeout('incoming',"Je dois ajouter que même si je suis fullstack avec une préférence pour le backend, n'étant pas designer, je peux suivre une maquette mais je ne peux moi-même créer un design.",23000);
+    addTimeout('outgoing', 'Et que recherchez-vous dans notre entreprise ?', 26000);
+    addTimeout('incoming', "Je recherche un environnement de travail qui me permette d'approfondir mes connaissances essentiellement en PHP, ReactPHP, Javascript mais aussi d'en développer de nouvelles dans des languages tels que kotlin, node.js, python et java.", 30000);
+    addTimeout('outgoing', 'Et que pensez-vous pouvoir nous apporter ?', 33000);
+    addTimeout('incoming', "un esprit passionné et assidu, toujours à la recherche de nouvelles technologies à employer. Aussi, étant autodidacte, je me dois toujours de combler mes lacunes dès qu'il y en a afin de toujours rester le plus productif possible.", 37000);
+    addTimeout('outgoing', "Entendu ! comment puis-je vous contacter ?", 43000);
+    addTimeout('incoming', "Soit en répondant au Mail, soit en utilisant le bouton contact ci-dessous ou enfin en me contactant sur mon GSM au 0494682531.", 45000);
 };
