@@ -34,11 +34,5 @@ let startMessage = () => {
     addTimeout('incoming', "un esprit passionné et assidu, toujours à la recherche de nouvelles technologies à employer. Aussi, étant autodidacte, je me dois toujours de combler mes lacunes dès qu'il y en a afin de toujours rester le plus productif possible.", 37000);
     addTimeout('outgoing', "Entendu ! comment puis-je vous contacter ?", 43000);
     addTimeout('incoming', "Soit en répondant au Mail, soit en utilisant le bouton contact ci-dessous ou enfin en me contactant sur mon GSM au 0494682531.", 45000);
-    setTimeout(function(){
-        let link = document.createElement('p');
-        link.setAttribute('class', 'incomingMSG');
-        link.innerHTML = "Vous pouvez également visiter mon <a href='https://mootoosamybryan.be'>site contenant mon portfolio</a> ainsi que mon <a href='https://github.com/BryanMootoosamy?tab=repositories'>github</a> !";
-        messageScreen.appendChild(link);
-        messageScreen.scrollTop = messageScreen.scrollHeight;
-    }, 47000);
+    addTimeout('incoming', "Vous pouvez également visiter mon <a href='https://mootoosamybryan.be'>site contenant mon portfolio</a> ainsi que mon <a href='https://github.com/BryanMootoosamy?tab=repositories'>github</a> !", 47000);
 };
