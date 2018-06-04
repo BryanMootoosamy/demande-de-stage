@@ -428,7 +428,8 @@
       animation: fade 1.5s forwards; }
       @media screen and (max-width: 1200px) and (orientation: portrait) {
         .page .chatbox .buttonafter {
-          transform: translate(54vw, 15vh); } }
+          position: absolute;
+          transform: translate(35vw, 65vh); } }
       @media screen and (max-width: 1200px) and (orientation: landscape) {
         .page .chatbox .buttonafter {
           transform: translate(44vw, 15vh); } }
