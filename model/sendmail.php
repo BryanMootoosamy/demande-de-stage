@@ -9,7 +9,7 @@
         '.$message.'
         ';
     if (isset($mail) && isset($message) && isset($content) && !empty($mail) && !empty($message) && !empty($content)) {
-        mail("$mail, mootoosamy.bryan@gmail.com", "Demande de contact au sujet d'un stage.", $content);
+        mail("$mail, mootoosamy.bryan@gmail.com", "Demande de contact au sujet d'un stage.", $content,"From: username@hostname\r\n");
     }
 
 
