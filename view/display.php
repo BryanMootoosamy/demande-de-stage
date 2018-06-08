@@ -17,7 +17,7 @@
         </div>
     </div>
     <div class='intro' id='intro'>
-        <h5>Bienvenue Mr ...</h5>
+        <h5>Bienvenue Mme / Mr</h5>
         <p id='p1'>Veuillez cliquer sur le voyant de Hal pour commencer.</p>
         <p id='p2'>Merci.</p>
     </div>
