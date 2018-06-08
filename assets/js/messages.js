@@ -23,7 +23,7 @@ let startMessage = () => {
     addTimeout('outgoing','Très bien.',7000);
     addTimeout('outgoing','Quelles sont vos compétences ?',9000);
     addTimeout('incoming','En ce qui concerne le front-end:',11000);
-    addTimeout('incoming','HTML5, CSS, SASS, JS, REACT',13000);
+    addTimeout('incoming','HTML5, CSS, SASS, JS, REACT, React Native',13000);
     addTimeout('incoming','En ce qui concerne le back-end:',15000);
     addTimeout('incoming','PHP (notamment orienté objet), ReactPHP.',17000);
     addTimeout('outgoing','Autre chose ? Une remarque ?',19000);
