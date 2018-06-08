@@ -306,7 +306,7 @@
     border: 1px solid white;
     opacity: 0;
     animation: fade 1s forwards;
-    height: 30vh;
+    height: 35vh;
     padding: 2vh 2vw;
     border-radius: 8px; }
     @media screen and (max-width: 1200px) and (orientation: portrait) {
